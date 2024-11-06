@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">OmikujiApp</string>
+    <string name="title_name">御神籤アプリ</string>
+    <string name="start_buttom_name">御神籤開始</string>
+    <string name="result_title">御神籤結果</string>
+    <string name="back_main">メインに戻る</string>
+</resources>

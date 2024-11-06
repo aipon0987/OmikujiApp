@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/top_bg"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_name"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:textColor="@color/omikuji_blue"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="36dp"/>
+    
+    <ImageView
+        android:layout_width="412dp"
+        android:layout_height="412dp"
+        android:src="@drawable/omikuji"
+        android:layout_gravity="center"/>
+    
+    <TextView
+        android:id="@+id/start_buttom_text"
+        android:layout_width="355dp"
+        android:layout_height="46dp"
+        android:text="@string/start_buttom_name"
+        android:textColor="@color/omikuji_red"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:background="@color/light_gray"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="64dp"/>
+        
+
+</FrameLayout>
