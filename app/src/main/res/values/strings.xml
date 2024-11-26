@@ -4,4 +4,11 @@
     <string name="start_buttom_name">御神籤開始</string>
     <string name="result_title">御神籤結果</string>
     <string name="back_main">メインに戻る</string>
+    <string name="great_blessing">大吉</string>
+    <string name="middle_blessing">中吉</string>
+    <string name="small_blessing">小吉</string>
+    <string name="blessing">吉</string>
+    <string name="uncertain_luck">末吉</string>
+    <string name="curse">凶</string>
+    <string name="great_curse">大凶</string>
 </resources>

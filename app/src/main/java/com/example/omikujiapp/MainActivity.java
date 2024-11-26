@@ -11,6 +11,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.util.Random;
+
 public class MainActivity extends AppCompatActivity {
 
     private TextView startBtn;
@@ -34,7 +36,9 @@ public class MainActivity extends AppCompatActivity {
                 //次の画面に遷移する
                 //Context: ApplocationContext, ActivityContextどちらか指定
                 //行く先のクラスを指定
-                Intent intent = new Intent(MainActivity.this,ResultActivity.class);
+                Random random = new Random();
+                int num = random.nextInt(7);
+                Intent intent = ResultActivity.newIntent(MainActivity.this,num);
                 startActivity(intent);
             }
         });
