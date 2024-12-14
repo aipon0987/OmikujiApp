@@ -33,6 +33,14 @@
         android:layout_height="260dp"
         android:layout_gravity="center"/>
     
+    <Button
+        android:id="@+id/buttom_fadein"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        style="?android:attr/buttonBarButtonStyle" />
+
+    
     <ImageView
         android:layout_width="178dp"
         android:layout_height="178dp"

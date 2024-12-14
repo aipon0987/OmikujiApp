@@ -5,6 +5,7 @@ import android.animation.ObjectAnimator;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -15,6 +16,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import javax.xml.transform.Result;
 
 public class ResultActivity extends AppCompatActivity {
 
@@ -86,6 +89,7 @@ public class ResultActivity extends AppCompatActivity {
 
                 omikuji2.setVisibility(View.VISIBLE);
 
+                Log.d(ResultActivity.class.getSimpleName(), "onAnimationEnd!!!");
                 fadeIn.start();
 
             }
@@ -111,36 +115,38 @@ public class ResultActivity extends AppCompatActivity {
         switch(number){
             case 0: //大吉
                 imageResID = R.drawable.great_blessing;
-                stringResId = R.drawable.great_blessing;
+                stringResId = R.string.great_blessing;
                 break;
             case  1: //中吉
                 imageResID = R.drawable.middle_blessing;
-                stringResId = R.drawable.middle_blessing;
+                stringResId = R.string.middle_blessing;
                 break;
             case 2: //小吉
                 imageResID = R.drawable.small_blessing;
-                stringResId = R.drawable.small_blessing;
+                stringResId = R.string.small_blessing;
                 break;
             case 3: //吉
                 imageResID = R.drawable.blessing;
-                stringResId = R.drawable.blessing;
+                stringResId = R.string.blessing;
                 break;
             case 4: //末吉
                 imageResID = R.drawable.uncertain_luck;
-                stringResId = R.drawable.uncertain_luck;
+                stringResId = R.string.uncertain_luck;
                 break;
             case 5: //凶
                 imageResID = R.drawable.curse;
-                stringResId = R.drawable.curse;
+                stringResId = R.string.curse;
                 break;
             case 6: //大凶
                 imageResID = R.drawable.great_curse;
-                stringResId = R.drawable.great_curse;
+                stringResId = R.string.great_curse;
                 break;
             default: //エラーコード
                 throw new RuntimeException("error: number is not found.");
+
         }
 
         omikuji.setImageResource(imageResID);
+        omikuji2.setText(stringResId);
     }
 }
